@@ -1,0 +1,84 @@
+html
+{
+    background-repeat: no-repeat;
+    background-size: center;
+    background-attachment: fixed;
+    animation: change 12s infinite ease-in-out;
+}
+
+form
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+form fieldset
+{
+    border: 0px;
+    padding: 0px;
+}
+
+form fieldset h2
+{
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
+}
+
+form fieldset p
+{
+    font-size: 14pt;
+    margin: 8% auto;
+}
+
+input[type=submit]
+{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 0.8em;
+    font-weight: 900;
+    height: 50px;
+    width: 35%;
+    cursor: pointer;
+    margin-top: 8%;
+}
+
+input[type=submit]:hover
+{
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 20%;
+}
+
+@keyframes change {
+    0%{
+        background-image: linear-gradient(grey, black, grey);
+    }
+    25%{
+        background-image: url('images/Standard Queen Room Homepage.jpg');
+        background-size: 100%;
+    }
+    50%{
+        background-image: url('images/Standard King Room Homepage.jpg');
+        background-size: 100%;
+    }
+    75%{
+        background-image: url('images/Deluxe Double Queen Room.jpg');
+        background-size: 100%;
+    }
+    100%{
+        background-image: url('images/Deluxe Double King Room.jpg');
+        background-size: 100%;
+    }
+}

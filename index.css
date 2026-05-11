@@ -1,0 +1,41 @@
+html {
+    background-image: url('images/indexsova.jpg'); /* Set your static background image here */
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+}
+
+.grid-item-1 h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.details {
+    font-family: FS Meridian Bold;
+    background-color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.details-image {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover, contain;
+    min-height: 45vh;
+}
+
+/* Removed the keyframes and animation */

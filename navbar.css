@@ -1,0 +1,201 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: FS Meridian Regular;
+}
+.fullscreen
+{
+    height:100vh;
+}
+
+/*custom fonts*/
+@font-face {
+    src: url('fonts/FSMeridian-Thin.ttf');
+    font-family: 'FS Meridian Thin';
+}
+
+@font-face {
+    src: url('fonts/FSMeridian-Regular.ttf');
+    font-family: 'FS Meridian Regular';
+}
+
+@font-face {
+    src: url('fonts/FSMeridian-Bold.ttf');
+    font-family: 'FS Meridian Bold';
+}
+
+/*for header*/
+h1{
+    font-family: FS Meridian Thin;
+    text-transform: uppercase;
+}
+
+/*regular texts*/
+.description{
+    font-family: FS Meridian Regular;
+
+}
+
+/*for buttons*/
+button{
+    background-color: transparent;
+    font-size: 1.25rem;
+    min-width: 6.25rem;
+    min-height: 1.875rem;
+    border: 0.125rem solid black;
+    text-decoration: none;
+}
+button a{
+    color: black;
+    text-decoration: none;
+}
+button a:hover{
+    opacity: 0.5;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    font-size: 1.25rem;
+    min-width: 6.25rem;
+    min-height: 1.875rem;
+    border: 0.125rem solid black;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+input[type=submit]:hover{
+    opacity: 0.5;
+}
+
+/*flexboxes*/
+.flex-container{
+    display: flex;
+}
+
+.flex-side{
+    width: 10%;
+}
+
+.flex-main{
+    width: 80%;
+    align-items: center;
+}
+
+.flex-50{
+    width: 50%;
+}
+/*set up everything for easy css use*/
+
+header{
+    background-color:rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1.25em;
+    position: relative;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-bar{
+    background-color: rgb(50, 50, 50);
+    min-height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-branding{
+    width: 5rem;
+}
+
+.nav-branding img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.313rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.center-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 3.125rem;
+}
+
+/*mobile view */
+@media (max-width:985px){
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 5.91rem;
+        gap: 1.25rem;
+        flex-direction: column;
+        background-color:rgba(0,0,0,0.2);
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 1rem 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
