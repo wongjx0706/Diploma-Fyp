@@ -1,2 +1,2 @@
 # Diploma-Fyp
-Hotel Booking Website
+This is my Fyp Project - Hotel Booking Website
